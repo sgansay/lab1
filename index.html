@@ -7,126 +7,8 @@
   <title>Sherwin</title>    
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-html, body{
-    height: 100%;
-    background-color: lightslategray;
-    background-size:100%;
-}
-.mainContainer{
-    background-color: lightgray;
-    width: 900px;
-    height: 1000px;
-    margin: auto auto;
-    padding: 15px;
-    border-radius: 50px;
-}
-.upperHeader{
-    width: 900px;
-    height: 300px;
-    display: flex;
-}
-#leftUContainer{
-    width: 600px;
-    height: 280px;
-    margin-right: 15px;
-    padding: 10px;
-}
-#profileContainer{
-    width: 300px;
-    height: 300px;
-    background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3e7WlU1cH3XTVlIsag8yqCLJrN0U3ZlJvpiKHcH4emaBqotWrnrhhPzAFY6dSg56w_JQaeBV01OCHVfoW5KWUc7HLT_0yep-VqRp6xOC86flwaq7HiNaJhp0F5CwCelbKuNMxfMN8KKlgPGNRATaLTl=s649-no?authuser=0');
-    background-size: cover;
-    border-radius: 5000px;
-    border: 5px solid lightslategray;
-}
-#nameContainer p{
-    height: 90px;
-    width: 100%;
-    background-color:white;
-    margin-top: 0px;    
-    border-radius: 50px;
-    font-size: 70px;
-    font-style: Verdana;
-}
-#descriptionContainer{
-    width: 100%;
-    height: 165px;
-    margin-top: -50px;
-    background-color: white;
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    text-indent: 40px;
-
-}
-.centerContainer{
-    width: 890px;
-    height: 300px;
-    background-color:lightgray;
-    margin-top: 30px;
-    margin-left: 10px;
-    padding-left: -10px;
-    display: flex;
-}
-#LeftCenterContainer{   
-    width: 296px;
-    height: 600px;
-    background-color:  white;
-    border: 5px solid lightslategray;
-    border-radius: 50px;
-    margin: 5px;
-    padding: 10px;
-
-}
-#School{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-}
-
-#MiddleCenterContainer{
-    width: 297px;
-    height: 600px;
-    background-color: white;
-    border: 5px solid lightslategray;
-    border-radius: 50px;
-    margin: 5px;
-    padding: 10px;
-}
-#Bio{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-}
-#RightCenterContainer{
-    width: 296px;
-    height: 600px;
-    background-color: white;
-    border: 5px solid lightslategray;
-    border-radius: 50px;
-    margin: 5px;
-    padding: 10px;
-}
-#MessageMe{
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-}
-</style>
 <body>
     <div class="mainContainer">
         <div class="upperHeader">
@@ -151,18 +33,18 @@ html, body{
         </div>
         <div class="centerContainer">
             <div id = "LeftCenterContainer">
-                <img src="data:image/png;base64,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" id="School" alt=School>
-                <p style="text-align:center"><p style="font-size: 30px;"><strong>Education</strong></p></p>
-                <p style="text-align:left"><p style="font-size: 20px;"><strong>Primary School</strong></p></p>
+                <img src="./images/school.png" id="School" alt=School>
+                <h1>Education</h1>
+                <p style="text-align:left"><p style="font-size: 20px;"><strong>Primary School:</strong></p></p>
                 <p style="text-align:left"><p style="font-size: 15px;"><p style="text-indent: 20px;">>South Cembo Elementary School</p></p></p>
-                <p style="text-align:left"><p style="font-size: 20px;"><strong>Secondary School</strong></p></p>
+                <p style="text-align:left"><p style="font-size: 20px;"><strong>Secondary School:</strong></p></p>
                 <p style="text-align:left"><p style="font-size: 15px;"><p style="text-indent: 20px;">>Pitogo High School</p></p></p>
-                <p style="text-align:left"><p style="font-size: 20px;"><strong>Tertiary School</strong></p></p>
+                <p style="text-align:left"><p style="font-size: 20px;"><strong>Tertiary School:</strong></p></p>
                 <p style="text-align:left"><p style="font-size: 15px;"><p style="text-indent: 20px;">>Asia Pacific College(Current)</p></p></p>
             </div>
             <div id = "MiddleCenterContainer">
                 <img src="https://www.netclipart.com/pp/m/11-110796_download-free-png-and-vector-resume-logo.png" id="Bio" alt=Bio>
-                <p style="text-align:center"><p style="font-size: 30px;"><strong>Bio</strong></p></p>
+                <h1>Bio</h1>
                 <p style="text-align:left"><p style="font-size: 15px;"><strong>Full Name:</strong> Sherwin Guitering Ansay</p></p>
                 <p style="text-align:left"><p style="font-size: 15px;"><strong>Address:</strong> South Cembo, Makati City</p></p>
                 <p style="text-align:left"><p style="font-size: 15px;"><strong>Age:</strong> 19 Years Old</p></p>
@@ -173,12 +55,65 @@ html, body{
             </div>
             <div id = "RightCenterContainer">
                 <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/message-icon-design-template-ff734aad72da096f0e49f3d693042135_screen.jpg?ts=1581057128" id="MessageMe" alt=MessageMe>
-                <p style="text-align:center"><p style="font-size: 30px;"><strong>Contact Me</strong></p></p>
-                <p style="text-align:left"><p style="font-size: 15px;"><strong>Facebook:</strong> https://www.facebook.com/NewRest.1214</p></p>
-                <p style="text-align:left"><p style="font-size: 15px;"><strong>Instagram:</strong> https://www.instagram.com/newrest_yam/</p></p>
-                <p style="text-align:left"><p style="font-size: 15px;"><strong>Google Mail:</strong> <br>sherwinansay@gmail.com</p></p>
-                <p style="text-align:left"><p style="font-size: 15px;"><strong>Yahoo Mail:</strong> sherwinansay@yahoo.com.ph</p></p>
-                <p style="text-align:left"><p style="font-size: 15px;"><strong>Twitter:</strong> <br> https://twitter.com/newrestyam</p> </p>
+                <h1>Contact Me</h1>
+                <p style="font-size: 20px" ><a href="https://www.facebook.com/NewRest.1214" target="blank"><Strong>Facebook</Strong></a></p>
+                <p style="font-size: 20px" ><a href="https://www.instagram.com/newrest_yam/" target="blank"><Strong>Instagram</Strong></a></p>
+                <p style="font-size: 20px" ><a href="https://twitter.com/newrestyam" target="blank"><Strong>Twitter</Strong></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="side-container">
+        <div class="pdf-links">
+            <div class="dropdown">
+                <h2>Activities:</h2>
+                <div class="dropdown-content">
+                    <a href="./files/Files/Activities/A1_ANSAY_SHERWIN.pdf" target="blank">A1: My Favorite Application</a>
+                    <a href="./files/Files/Activities/A2_ANSAY_SHERWIN.pdf" target="blank">A2: Personas</a>
+                    <a href="./files/Files/Activities/A3_ANSAY_SHERWIN.pdf" target="blank">A3: Prototype</a>
+                    <a href="./files/Files/Activities/A4_ANSAY_SHERWIN.pdf" target="blank">A4: Invitation Design</a>
+                    <a href="#" target="blank">A5: Grid Design</a>
+                    <a href="./files/Files/Activities/A6_ANSAY_SHERWIN.pdf" target="blank">A6: Game Day</a>
+                    <a href="#" target="blank">A7: Personal Website Progress Report</a>
+                </div>
+            </div>
+        </div>
+        <div class="pdf-links-2">
+            <div class="dropdown">
+                <h2>Reflections:</h2>
+                <div class="dropdown-content">
+                    <a href="./files/Files/Reflections/R1_ANSAY_SHERWIN.pdf" target="blank">R1: My First Week of USERDES Class</a>
+                    <a href="./files/Files/Reflections/R2_ANSAY_SHERWIN.pdf" target="blank">R2: Introduction to Design Thinking Process</a>
+                    <a href="./files/Files/Reflections/R3_ANSAY_SHERWIN.pdf" target="blank">R3: Need Finding (Design Process)</a>
+                    <a href="./files/Files/Reflections/R4_ANSAY_SHERWIN.pdf" target="blank">R4: Information Architecture</a>
+                    <a href="./files/Files/Reflections/R5_ANSAY_SHERWIN.pdf" target="blank">R5: Visual Information Design</a>
+                    <a href="./files/Files/Reflections/R6_ANSAY_SHERWIN.pdf" target="blank">R6: Color Theory and Typography</a>
+                </div>
+            </div>
+        </div>
+        <div class="pdf-links-3">
+            <div class="dropdown">
+                <h2>Lectures:</h2>
+                <div class="dropdown-content">
+                    <a href="./files/Files/Lectures/L1_Ansay.pdf" target="blank">L1: UX Design 1: Overview</a>
+                    <a href="./files/Files/Lectures/L2_Ansay.pdf" target="blank">L2: UX Design 2: Analyzing User Data</a>
+                    <a href="./files/Files/Lectures/L3_Ansay.pdf" target="blank">L3: UX Design 3: Creating Personas</a>
+                    <a href="./files/Files/Lectures/L4_Ansay.pdf" target="blank">L4: UX Design 4: Ideation</a>
+                    <a href="./files/Files/Lectures/L5_Ansay.pdf" target="blank">L5: UX Design 5: Creating Scenarios and Storyboards</a>
+                    <a href="./files/Files/Lectures/L6_Ansay.pdf" target="blank">L6: UX Design 6: Paper Prototyping</a>
+                    <a href="./files/Files/Lectures/L7_Ansay.pdf" target="blank">L7: UX Design 7: Implementation Planning</a>
+                    <a href="./files/Files/Lectures/L8_Ansay.pdf" target="blank">L8: UX Foundations: Prototyping</a>
+                    <a href="./files/Files/Lectures/L9_Ansay.pdf" target="blank">L9: Bootstrap 4: Essential Training</a>
+                </div>
+            </div>
+        </div>
+        <div class="pdf-links-4">
+            <div class="dropdown">
+                <h2>Guide Questions:</h2>
+                <div class="dropdown-content">
+                    <a href="./files/Files/Questions/G1_ANSAY_SHERWIN.pdf" target="blank">G1: What is User Design?</a>
+                    <a href="./files/Files/Questions/G2_ANSAY_SHERWIN.pdf" target="blank">G2: What is Design Thinking?</a>
+                    <a href="./files/Files/Questions/G3_ANSAY_SHERWIN.pdf" target="blank">G3: What is Prototyping?</a>
+                </div>
             </div>
         </div>
     </div>
